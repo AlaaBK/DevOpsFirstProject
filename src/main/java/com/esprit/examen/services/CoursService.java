@@ -40,12 +40,20 @@ public class CoursService implements ICoursService {
 		List<Cours> cours =   coursRepository.findAll();
 		return cours;
 	}
-	
+
+	@Override
+	public Cours getCoursById(Long id) {
+		Cours cour =  coursRepository.getById(id);
+		return cour;
+	}
+
 	@Override
 	public void affecterCoursASession(Long coursId, Long sessionId)
 	{
-		/*todo*/
-        
+	//	Session session =  sessionRepository.getById(sessionId);
+		List<Cours> cours = coursRepository.findAll();
+		//session.setCours(cours);
+
 	}
 
 }

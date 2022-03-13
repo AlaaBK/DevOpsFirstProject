@@ -69,7 +69,7 @@ public class Cours implements Serializable {
 	}
 	public Cours() {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 	
 	

@@ -15,4 +15,7 @@ public interface ICoursService {
 	List<Cours> getCours();
 	
 	void affecterCoursASession(Long coursId, Long sessionId);
+
+	Cours getCoursById(Long id);
+
 }
